@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AgentContext : MonoBehaviour
@@ -22,6 +23,8 @@ public class AgentContext : MonoBehaviour
 
     public Vector3 AvoidanceDirection;
 
+    public List<Transform> PerceivedObjects = new List<Transform>();
+
     #endregion
 
     #region Public Methods
@@ -45,6 +48,16 @@ public class AgentContext : MonoBehaviour
             $"Avoidance Direction: {AvoidanceDirection} | " +
             $"Current Target: {targetName}",
             this);
+    }
+
+    public void ClearPerception()
+    {
+        PerceivedObjects.Clear();
+    }
+
+    public void AddPerceivedObject(Transform obj)
+    {
+        PerceivedObjects.Add(obj);
     }
 
     #endregion

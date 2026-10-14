@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b322a6528ab35384a8189d23f5a5b930, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b322a6528ab35384a8189d23f5a5b930, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b322a6528ab35384a8189d23f5a5b930, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b322a6528ab35384a8189d23f5a5b930, type: 3}
       propertyPath: m_LocalRotation.w
@@ -107,10 +107,22 @@ PrefabInstance:
       addedObject: {fileID: 3255491494961959012}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b322a6528ab35384a8189d23f5a5b930, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 399977506379531123}
+      addedObject: {fileID: 8014920873712267829}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b322a6528ab35384a8189d23f5a5b930, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1243924571182500995}
+      addedObject: {fileID: 2676899291693254587}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b322a6528ab35384a8189d23f5a5b930, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3359631453187222269}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b322a6528ab35384a8189d23f5a5b930, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4055664239510468430}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b322a6528ab35384a8189d23f5a5b930, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 356238469046762657}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b322a6528ab35384a8189d23f5a5b930, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8539204622678260741}
   m_SourcePrefab: {fileID: 100100000, guid: b322a6528ab35384a8189d23f5a5b930, type: 3}
 --- !u!1 &7335632317660700639 stripped
 GameObject:
@@ -133,7 +145,7 @@ CharacterController:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Height: 2
   m_Radius: 0.5
@@ -149,7 +161,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7335632317660700639}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
@@ -195,25 +207,40 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7335632317660700639}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67875e75ede1c0147af3d2ca13896d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HumanController
   moveSpeed: 5
---- !u!114 &399977506379531123
-MonoBehaviour:
+--- !u!54 &8014920873712267829
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7335632317660700639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16d1f8ded8627a3428cb9b209e1096a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DetectionAgent
---- !u!114 &1243924571182500995
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 84
+  m_CollisionDetection: 0
+--- !u!114 &2676899291693254587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -229,6 +256,72 @@ MonoBehaviour:
   IsNearHazard: 0
   IsNearTarget: 0
   IsAvoiding: 0
+  HasAgentTarget: 0
   CurrentTarget: {fileID: 0}
+  CurrentAgentTarget: {fileID: 0}
   CurrentDetection: 0
   AvoidanceDirection: {x: 0, y: 0, z: 0}
+--- !u!114 &3359631453187222269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335632317660700639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16d1f8ded8627a3428cb9b209e1096a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectionAgent
+--- !u!114 &4055664239510468430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335632317660700639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f83ce9afee1dce419b9580ab933283b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AvoidanceSensor
+  detectionDistance: 0.5
+  sensorHeight: 0.5
+  avoidanceDistance: 1.5
+--- !u!136 &356238469046762657
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335632317660700639}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Height: 0.75
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.3, z: 0}
+--- !u!114 &8539204622678260741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335632317660700639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f837100209ed2064082e1ad585ad6553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChaseAgent
+  moveSpeed: 2
+  turnSpeed: 8
