@@ -15,13 +15,31 @@ public class AgentContext : MonoBehaviour
 
     public bool HasAgentTarget;
 
+    public bool HasKey;
+
+    public bool HasResponseTarget;
+
     public GameObject CurrentTarget;
 
     public Transform CurrentAgentTarget;
 
+    public Transform VisiblePickup;
+
+    public Transform VisibleAgent;
+
+    public Transform VisibleTarget;
+
+    public Transform ResponseTarget;
+
+    public Transform LastPerceivedObject;
+
     public DetectionType CurrentDetection;
 
     public Vector3 AvoidanceDirection;
+
+    public Vector3 LastPerceivedPosition;
+
+    public float LastPerceivedTime;
 
     public List<Transform> PerceivedObjects = new List<Transform>();
 
@@ -58,6 +76,10 @@ public class AgentContext : MonoBehaviour
     public void AddPerceivedObject(Transform obj)
     {
         PerceivedObjects.Add(obj);
+
+        LastPerceivedObject = obj;
+        LastPerceivedPosition = obj.position;
+        LastPerceivedTime = Time.time;
     }
 
     #endregion

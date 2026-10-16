@@ -108,6 +108,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48ceb316b3547c649ac8f9cb7d1914de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1864771648404611364}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48ceb316b3547c649ac8f9cb7d1914de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7396404323840250648}
   m_SourcePrefab: {fileID: 100100000, guid: 48ceb316b3547c649ac8f9cb7d1914de, type: 3}
 --- !u!1 &6223034052838598507 stripped
 GameObject:
@@ -158,10 +161,17 @@ MonoBehaviour:
   IsNearTarget: 0
   IsAvoiding: 0
   HasAgentTarget: 0
+  HasKey: 0
+  HasResponseTarget: 0
   CurrentTarget: {fileID: 0}
   CurrentAgentTarget: {fileID: 0}
+  ResponseTarget: {fileID: 0}
+  LastPerceivedObject: {fileID: 0}
   CurrentDetection: 0
   AvoidanceDirection: {x: 0, y: 0, z: 0}
+  LastPerceivedPosition: {x: 0, y: 0, z: 0}
+  LastPerceivedTime: 0
+  PerceivedObjects: []
 --- !u!114 &995300891799133310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,3 +201,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FleeAgent
   moveSpeed: 3
   turnSpeed: 8
+--- !u!136 &-7396404323840250648
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223034052838598507}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.43, z: 0}
