@@ -165,8 +165,8 @@ public abstract class IntermediateAgentController : MonoBehaviour
         if (context.HasCommittedDirection && IsDirectionAvailable(context.CurrentDirection))
         {
             float committedAlignment = Vector3.Dot(context.CurrentDirection, normalizedDesiredDirection);
-
-            if (committedAlignment >= 0f)
+            Debug.Log(committedAlignment);
+            if (committedAlignment >= 0.8f)
             {
                 return context.CurrentDirection;
             }
