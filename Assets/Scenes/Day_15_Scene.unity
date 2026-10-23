@@ -773,7 +773,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8544323286348492594, guid: 56754aa0ff2d9464ead74c3602105ab4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.02
+      value: -1.37
       objectReference: {fileID: 0}
     - target: {fileID: 8544323286348492594, guid: 56754aa0ff2d9464ead74c3602105ab4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -975,7 +975,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6239724446012250299, guid: 3d53d9e89e4c3a944ab0f5ea498b308f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: -3.34
       objectReference: {fileID: 0}
     - target: {fileID: 6239724446012250299, guid: 3d53d9e89e4c3a944ab0f5ea498b308f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4769,7 +4769,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 133951036679313896, guid: 5383a57c33f02d540be91feea3e0ca4e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.19
+      value: -1.75
       objectReference: {fileID: 0}
     - target: {fileID: 133951036679313896, guid: 5383a57c33f02d540be91feea3e0ca4e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5335,7 +5335,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6239724446012250299, guid: 3d53d9e89e4c3a944ab0f5ea498b308f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: -8.87
       objectReference: {fileID: 0}
     - target: {fileID: 6239724446012250299, guid: 3d53d9e89e4c3a944ab0f5ea498b308f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5343,7 +5343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6239724446012250299, guid: 3d53d9e89e4c3a944ab0f5ea498b308f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.57
+      value: 5.06
       objectReference: {fileID: 0}
     - target: {fileID: 6239724446012250299, guid: 3d53d9e89e4c3a944ab0f5ea498b308f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5446,9 +5446,17 @@ PrefabInstance:
       propertyPath: sensorHeight
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 2220091858555384264, guid: dceee49e465bb6447b2eb36a1c4a6daa, type: 3}
+      propertyPath: detectionDistance
+      value: 0.125
+      objectReference: {fileID: 0}
     - target: {fileID: 3234832037673078888, guid: dceee49e465bb6447b2eb36a1c4a6daa, type: 3}
       propertyPath: eyeHeight
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3234832037673078888, guid: dceee49e465bb6447b2eb36a1c4a6daa, type: 3}
+      propertyPath: fieldOfView
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 3234832037673078888, guid: dceee49e465bb6447b2eb36a1c4a6daa, type: 3}
       propertyPath: perceptionMask.m_Bits
@@ -5476,7 +5484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7981769408136791201, guid: dceee49e465bb6447b2eb36a1c4a6daa, type: 3}
       propertyPath: knownCoinLocations.Array.size
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7981769408136791201, guid: dceee49e465bb6447b2eb36a1c4a6daa, type: 3}
       propertyPath: 'knownCoinLocations.Array.data[0]'
